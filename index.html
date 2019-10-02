@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon"HREF="https://images.vexels.com/media/users/3/158542/isolated/lists/a584351ad747068aff8e83ed254a8384-ilustracao-de-bola-de-futebol.png">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Campeonato de Futebol</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <form action="index.html" method="post" class="needs-validation" novalidate>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="jumbotron" id="cabecalho">
+                        <h1>Entre com os dados abaixo:</h1>
+                    </div>
+                </div>
+
+                <div class="col-md-2" id="dados">
+                    <div class="form-group">
+                        <label for="" class="control-label">Idade: </label>
+                        <input id="idade" type="number" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="" class="control-label">Altura: </label>
+                        <input id="altura" type="number" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="" class="control-label">Peso: </label>
+                        <input id="peso" type="number" class="form-control" required>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="botao">
+                <button class="btn btn-success" id="Calcular">Calcular</button>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="container">
+        <table class="table table-bordered table-striped" id="tabela">
+            <thead class="thead">
+                <tr>
+                    <th scope="col">Quantidade de jogadores abaixo de 18 anos</th>
+                    <th scope="col">Média de Idade</th>
+                    <th scope="col">Média da Altura</th>
+                    <th scope="col">Porcentagem acima de 80kg</th>
+                </tr>
+            </thead>
+
+            <tbody id="dadostab">
+            </tbody>
+
+        </table>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
